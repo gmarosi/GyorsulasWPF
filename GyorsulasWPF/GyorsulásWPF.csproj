@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\bike.png" />
+    <None Remove="images\fuelCan.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GyorsulásModel\Gyorsulás.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\bike.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\fuelCan.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
